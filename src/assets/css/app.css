@@ -1,0 +1,2107 @@
+/**
+ * Fast.io - Application
+ * Copyright 2019-2364 Fast
+ */
+
+/* ==========================================================================
+  Fast theme
+  ========================================================================== */
+
+:root {
+  --f-color1: #5269ff;  /* blue   */
+  --f-color2: #2cd387;  /* green  */
+  --f-color3: #8e6acc;  /* purple */
+  --f-color4: #fcbd56;  /* yellow */
+  --f-color5: #ff6b7f;  /* pink   */
+  --f-color6: #ff5762;  /* red    */
+  --f-color7: #54b1fc;  /* sky blue */
+
+  --f-color1-dark: #4254cc;   /* blue, dark */
+  --f-color1-light: #e5eeff;  /* blue, light */
+  --f-color2-dark: #23a96c;   /* green, dark */
+  --f-color2-light: #d5f6e7;  /* green, light */
+  --f-color3-dark: #7255a3;   /* purple, dark */
+  --f-color3-light: #e8e1f5;  /* purple, light */
+  --f-color4-dark: #ca9745;  /* yellow, dark */
+  --f-color4-light: #fef2dd;  /* yellow, light */
+  --f-color6-dark: #cc464e;   /* red, dark */
+  --f-color6-light: #ffdde0;  /* red,light */
+
+  --f-gray1: #1e2339; /* main menu backgrounds */
+  --f-gray2: #262c47;
+  --f-gray3: #3c425a; /* main heading / primary element in lists */
+  --f-gray4: #51566c;
+  --f-gray5: #686c7f;
+  --f-gray6: #7d8091; /* paragraph text / breadcrumb end / input labels */
+  --f-gray7: #9396a3;
+  --f-gray8: #a8abb5; /* sub-text / secondary UI / icon UI / tabs default */
+  --f-gray9: #bec0c8; /* form input placeholders */
+  --f-gray10: #d4d5da;
+  --f-gray11: #dfe0e4; /* form input border */
+  --f-gray12: #eaeaed;
+  --f-gray13: #eeeef1; /* 1px rules */
+  --f-gray14: #f2f3f4;
+  --f-gray15: #f6f7f8; /* 2px rules / item blocks */
+  --f-gray16: #fbfbfc; /* background for modular blocks */
+
+  --f-text-sm: .82rem; /* small text, ~13.12px (based on bootstrap default) */
+  --f-text-md: .875rem; /* medium text, 14px (based on bootstrap default) */
+}
+
+.bg-f-color1 { background-color: var(--f-color1) !important; }
+.bg-f-color2 { background-color: var(--f-color2) !important; }
+.bg-f-color3 { background-color: var(--f-color3) !important; }
+.bg-f-color4 { background-color: var(--f-color4) !important; }
+.bg-f-color5 { background-color: var(--f-color5) !important; }
+.bg-f-color6 { background-color: var(--f-color6) !important; }
+.bg-f-color7 { background-color: var(--f-color7) !important; }
+.bg-f-color1-dark { background-color: var(--f-color1-dark) !important; }
+.bg-f-color1-light { background-color: var(--f-color1-light) !important; }
+.bg-f-color2-dark { background-color: var(--f-color2-dark) !important; }
+.bg-f-color2-light { background-color: var(--f-color2-light) !important; }
+.bg-f-color3-dark { background-color: var(--f-color3-dark) !important; }
+.bg-f-color3-light { background-color: var(--f-color3-light) !important; }
+.bg-f-color4-dark { background-color: var(--f-color4-dark) !important; }
+.bg-f-color4-light { background-color: var(--f-color4-light) !important; }
+.bg-f-color6-dark { background-color: var(--f-color6-dark) !important; }
+.bg-f-color6-light { background-color: var(--f-color6-light) !important; }
+.bg-f-gray1 { background-color: var(--f-gray1) !important; }
+.bg-f-gray2 { background-color: var(--f-gray2) !important; }
+.bg-f-gray3 { background-color: var(--f-gray3) !important; }
+.bg-f-gray4 { background-color: var(--f-gray4) !important; }
+.bg-f-gray5 { background-color: var(--f-gray5) !important; }
+.bg-f-gray6 { background-color: var(--f-gray6) !important; }
+.bg-f-gray7 { background-color: var(--f-gray7) !important; }
+.bg-f-gray8 { background-color: var(--f-gray8) !important; }
+.bg-f-gray9 { background-color: var(--f-gray9) !important; }
+.bg-f-gray10 { background-color: var(--f-gray10) !important; }
+.bg-f-gray11 { background-color: var(--f-gray11) !important; }
+.bg-f-gray12 { background-color: var(--f-gray12) !important; }
+.bg-f-gray13 { background-color: var(--f-gray13) !important; }
+.bg-f-gray14 { background-color: var(--f-gray14) !important; }
+.bg-f-gray15 { background-color: var(--f-gray15) !important; }
+.bg-f-gray16 { background-color: var(--f-gray16) !important; }
+
+.border-f-color1 { border-color: var(--f-color1) !important; }
+.border-f-color2 { border-color: var(--f-color2) !important; }
+.border-f-color3 { border-color: var(--f-color3) !important; }
+.border-f-color4 { border-color: var(--f-color4) !important; }
+.border-f-color5 { border-color: var(--f-color5) !important; }
+.border-f-color6 { border-color: var(--f-color6) !important; }
+.border-f-color7 { border-color: var(--f-color7) !important; }
+.border-f-gray1 { border-color: var(--f-gray1) !important; }
+.border-f-gray2 { border-color: var(--f-gray2) !important; }
+.border-f-gray3 { border-color: var(--f-gray3) !important; }
+.border-f-gray4 { border-color: var(--f-gray4) !important; }
+.border-f-gray5 { border-color: var(--f-gray5) !important; }
+.border-f-gray6 { border-color: var(--f-gray6) !important; }
+.border-f-gray7 { border-color: var(--f-gray7) !important; }
+.border-f-gray8 { border-color: var(--f-gray8) !important; }
+.border-f-gray9 { border-color: var(--f-gray9) !important; }
+.border-f-gray10 { border-color: var(--f-gray10) !important; }
+.border-f-gray11 { border-color: var(--f-gray11) !important; }
+.border-f-gray12 { border-color: var(--f-gray12) !important; }
+.border-f-gray13 { border-color: var(--f-gray13) !important; }
+.border-f-gray14 { border-color: var(--f-gray14) !important; }
+.border-f-gray15 { border-color: var(--f-gray15) !important; }
+.border-f-gray16 { border-color: var(--f-gray16) !important; }
+
+.text-f-color1 { color: var(--f-color1); }
+.text-f-color2 { color: var(--f-color2); }
+.text-f-color3 { color: var(--f-color3); }
+.text-f-color4 { color: var(--f-color4); }
+.text-f-color5 { color: var(--f-color5); }
+.text-f-color6 { color: var(--f-color6); }
+.text-f-color7 { color: var(--f-color7); }
+.text-f-gray1 { color: var(--f-gray1); }
+.text-f-gray2 { color: var(--f-gray2); }
+.text-f-gray3 { color: var(--f-gray3); }
+.text-f-gray4 { color: var(--f-gray4); }
+.text-f-gray5 { color: var(--f-gray5); }
+.text-f-gray6 { color: var(--f-gray6); }
+.text-f-gray7 { color: var(--f-gray7); }
+.text-f-gray8 { color: var(--f-gray8); }
+.text-f-gray9 { color: var(--f-gray9); }
+.text-f-gray10 { color: var(--f-gray10); }
+.text-f-gray11 { color: var(--f-gray11); }
+.text-f-gray12 { color: var(--f-gray12); }
+.text-f-gray13 { color: var(--f-gray13); }
+.text-f-gray14 { color: var(--f-gray14); }
+.text-f-gray15 { color: var(--f-gray15); }
+.text-f-gray16 { color: var(--f-gray16); }
+
+.text-f-sm { font-size: var(--f-text-sm); }
+.text-f-md { font-size: var(--f-text-md); }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+  color: var(--f-gray6);
+  padding-top: 4rem; /* make room for fixed nav */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--f-gray3);
+  font-weight: 600 !important;
+}
+
+a {
+  color: var(--f-color1);
+}
+
+a:hover {
+  color: var(--f-color1-dark);
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-secondary,
+.btn-outline-secondary,
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--f-color1);
+  border-color: var(--f-color1);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var(--f-color1-dark);
+  border-color: var(--f-color1-dark);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: var(--f-color1);
+  border-color: var(--f-color1);
+}
+
+.btn-outline-primary {
+  color: var(--f-color1);
+  border-color: var(--f-color1);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:focus, .btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--f-color1-dark);
+  border-color: var(--f-color1-dark);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: var(--f-color1);
+  background-color: transparent;
+}
+
+.btn-secondary {
+  background-color: var(--f-gray5);
+  border-color: var(--f-gray5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: var(--f-gray4);
+  border-color: var(--f-gray4);
+}
+
+.btn-outline-secondary {
+  color: var(--f-gray5);
+  border-color: var(--f-gray5);
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:focus, .btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--f-gray4);
+  border-color: var(--f-gray4);
+}
+
+.btn-success {
+  background-color: var(--f-color2);
+  border-color: var(--f-color2);
+}
+
+.btn-success:hover {
+  background-color: var(--f-color2-dark);
+  border-color: var(--f-color2-dark);
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+  background-color: var(--f-color2-dark);
+  border-color: var(--f-color2-dark);
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: var(--f-color4);
+  border-color: var(--f-color4);
+}
+
+.btn-warning:hover {
+  color: #fff;
+  background-color: var(--f-color4-dark);
+  border-color: var(--f-color4-dark);
+}
+
+.btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle {
+  color: #fff;
+  background-color: var(--f-color4-dark);
+  border-color: var(--f-color4-dark);
+}
+
+.btn-danger {
+  background-color: var(--f-color6);
+  border-color: var(--f-color6);
+}
+
+.btn-danger:hover {
+  background-color: var(--f-color6-dark);
+  border-color: var(--f-color6-dark);
+}
+
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+  background-color: var(--f-color6-dark);
+  border-color: var(--f-color6-dark);
+}
+
+.btn-link {
+  color: var(--f-color1);
+}
+
+.btn-link:hover {
+  color: var(--f-color1-dark);
+}
+
+.custom-switch .custom-control-label::before {
+  border-color: var(--f-gray8);
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: var(--f-gray8);
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::before {
+  border-color: var(--f-color2);
+  background-color: var(--f-color2);
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+  background-color: white;
+}
+
+.custom-control-input:disabled~.custom-control-label::before,
+.custom-control-input:disabled~.custom-control-label::after {
+  opacity: .5;
+}
+
+.custom-control-input:disabled~.custom-control-label {
+  color: var(--f-gray10);
+}
+
+.form-control:disabled {
+  opacity: .6;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--f-gray9) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: var(--f-gray9) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: var(--f-gray9) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--f-gray9) !important;
+}
+::placeholder {
+  color: var(--f-gray9) !important;
+}
+
+.fade-item {
+  opacity: .3;
+}
+
+.dropdown-menu {
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.05);
+  font-size: var(--f-text-md)
+}
+
+/* Something to offset "Pro" badges from UI (like a cool gradient) */
+.FastProBadge {
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(135deg, var(--f-color3), var(--f-color5));
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.1);
+}
+
+/* Wrapper for tables that need to scroll when narrow */
+.TableScrollWrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Don't apply validation style to non-required inputs - Bootstrap does not seem to have a way to accomplish this */
+.form-control.skip-validation.is-valid, .was-validated .form-control.skip-validation:valid {
+  border-color: #ced4da;
+  background-image: none;
+}
+
+.form-control.skip-validation.is-valid:focus, .was-validated .form-control.skip-validation:valid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* ==========================================================================
+   Main nav
+   ========================================================================== */
+
+.navbar .navbar-nav .nav-link {
+  color: var(--f-gray8);
+}
+
+.navbar-brand svg {
+  fill: var(--f-color1);
+}
+
+.navbar .IconButton {
+  min-width: 2.75rem;
+}
+
+.MainNav .navbar.fixed-top {
+  z-index: 1031; /* set to +1 higher than BS default, to keep sidebar above fixed objects below navbar (in markup) */
+}
+
+/* Sidebar menu
+   ========================================================================== */
+
+#Sidebar {
+  position: fixed;
+  min-width: 250px;
+  max-width: 450px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-101%);
+  background: var(--f-gray1);
+  transition: transform 0.2s ease-out;
+  overflow: auto;
+  z-index: 9999;
+}
+
+@media (max-width: 575px) {
+  #Sidebar {
+    max-width: 999rem;
+    width: 100%;
+  }
+}
+
+#Sidebar.is-active {
+  transform: translateX(0);
+  box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
+}
+
+.Overlay {
+  position: fixed;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.2s ease-out, width 0s linear .2s, height 0s linear .2s;
+  z-index: 9998;
+}
+
+#Sidebar.is-active + .Overlay {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+#Sidebar-close {
+  opacity: .3;
+  transition: opacity .15s ease-in-out;
+}
+
+#Sidebar-close:hover,
+#Sidebar-close:active {
+  opacity: 1;
+}
+
+#Sidebar h2 {
+  color: var(--f-gray5);
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+
+#Sidebar li {
+  display: flex;
+  background-color: transparent;
+  border-color: transparent;
+  transition: background-color .15s ease-in-out;
+  padding: 0;
+}
+
+#Sidebar li:hover {
+  background-color: var(--f-gray2);
+  text-decoration: none;
+}
+
+#Sidebar section a {
+  padding: .5rem 1.5rem;
+  flex-grow: 1;
+  text-align: left;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#Sidebar section a:hover {
+  text-decoration: none;
+}
+
+#Sidebar .Favorite {
+  font-size: 75%;
+  opacity: 0;
+  background-color: transparent;
+  transition: all .15s ease-in-out;
+}
+
+#Sidebar li:hover .Favorite {
+  opacity: 1;
+}
+
+#Sidebar .Favorite:hover {
+  background-color: var(--f-gray3);
+}
+
+#Sidebar .Favorite.active {
+  opacity: 1;
+}
+
+#Sidebar .Favorite:not(.active):hover {
+  color: var(--f-gray8);
+}
+
+.FastVersion {
+  font-size: .7rem;
+  opacity: .5;
+  padding: .1rem .25rem;
+}
+
+/* Events menu
+   ========================================================================== */
+
+.EventsMenu-status {
+  height: 8px;
+  width: 8px;
+  top: 4px;
+  right: 4px;
+  pointer-events: none;
+}
+
+.EventsMenu.has-info .EventsMenu-status {
+  background-color: var(--f-color2);
+}
+
+.EventsMenu.has-warnings .EventsMenu-status {
+  background-color: var(--f-color4);
+}
+
+.EventsMenu.has-errors .EventsMenu-status {
+  background-color: var(--f-color6);
+}
+
+.EventsMenu .dropdown-menu {
+  min-width: 35rem;
+}
+
+@media (max-width: 767px) {
+  .navbar-expand .navbar-nav .EventsMenu .dropdown-menu {
+    position: fixed;
+    top: 3.25rem;
+    left: .5rem;
+    right: .5rem;
+    min-width: 0;
+  }
+}
+
+.EventItem > svg {
+  min-width: 1.5rem;
+}
+
+/* Sites update status menu
+   ========================================================================== */
+
+.UpdatesMenu-status {
+  height: 8px;
+  width: 8px;
+  top: 4px;
+  right: 4px;
+  pointer-events: none;
+}
+
+.UpdatesMenu.has-info .UpdatesMenu-status {
+  background-color: var(--f-color2);
+}
+
+.UpdatesMenu.has-warnings .UpdatesMenu-status {
+  background-color: var(--f-color4);
+}
+
+.UpdatesMenu.has-errors .UpdatesMenu-status {
+  background-color: var(--f-color6);
+}
+
+.UpdatesMenu .dropdown-menu {
+  min-width: 35rem;
+}
+
+@media (max-width: 767px) {
+  .navbar-expand .navbar-nav .UpdatesMenu .dropdown-menu {
+    position: fixed;
+    top: 3.25rem;
+    left: .5rem;
+    right: .5rem;
+    min-width: 0;
+  }
+}
+
+.UpdateItem > svg {
+  min-width: 1.5rem;
+}
+
+.UpdateItem-status > div {
+  border-top: 2px solid;
+  color: var(--f-gray10);
+  font-size: .7rem;
+  margin-right: 2px;
+}
+
+@media (max-width: 575px) {
+  .UpdateItem-status > div {
+    border-left: 2px solid;
+    border-top: 0;
+    margin-bottom: 2px;
+  }
+}
+
+.UpdateItem-status > div span {
+  height: 14px;
+  width: 14px;
+  border: 1px solid;
+}
+
+.UpdateItem-status i,
+.UpdateItem-status .svg-inline--fa {
+  display: none;
+}
+
+.UpdateItem-status .spinner-border {
+  width: 12px;
+  height: 12px;
+}
+
+.UpdateItem.is-syncing .UpdateItem-status > div:nth-child(1) {
+  color: var(--f-color3);
+}
+
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(2) {
+  color: var(--f-color7);
+}
+
+.UpdateItem.is-complete .UpdateItem-status > div:nth-child(3) {
+  color: var(--f-color2);
+}
+
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(1),
+.UpdateItem.is-complete .UpdateItem-status > div:not(:last-child) {
+  color: var(--f-gray3);
+}
+
+.UpdateItem.is-syncing .UpdateItem-status > div:nth-child(1) .spinner-border,
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(1) .svg-inline--fa,
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(2) .spinner-border,
+.UpdateItem.is-complete .UpdateItem-status > div .svg-inline--fa {
+  display: block;
+}
+
+.UpdateItem.is-syncing .UpdateItem-status > div:nth-child(1) span,
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(1) span,
+.UpdateItem.is-pushing .UpdateItem-status > div:nth-child(2) span,
+.UpdateItem.is-complete .UpdateItem-status > div span {
+  border-color: transparent;
+}
+
+/* Account menu
+   ========================================================================== */
+
+.AccountMenu .nav-link {
+  height: 2.75rem;
+  width: 2.75rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--f-gray8);
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+  padding: 0;
+  border: none;
+}
+
+.AccountMenu .dropdown-menu {
+  background: var(--f-gray1);
+}
+
+.AccountMenu .Account-avatar {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+}
+
+.AccountMenu .dropdown-menu a:focus,
+.AccountMenu .dropdown-menu a:hover,
+.AccountMenu .dropdown-menu a:active {
+  background: var(--f-gray2);
+  color: #fff !important;
+}
+
+@media (max-width: 575px) {
+  .AccountMenu .dropdown-menu {
+    position: fixed;
+    top: 3.5rem;
+    left: .5rem;
+    right: .5rem;
+  }
+
+  .AccountMenu h1 {
+    font-size: var(--f-text-md);
+    white-space: normal;
+  }
+}
+
+/* ==========================================================================
+   App core elements
+   ========================================================================== */
+
+/* Gray icons that funtion as buttons
+   ========================================================================== */
+
+.IconButton {
+  color: var(--f-gray8);
+}
+
+.IconButton:focus,
+.IconButton:hover {
+  color: rgba(0,0,0,.7);
+}
+
+/* Back button below header
+   ========================================================================== */
+
+.BackButton {
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+
+/* Filter dropdowns and sort options
+   ========================================================================== */
+
+.FilterMenu > .btn {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.FilterMenu > .btn:focus,
+.FilterMenu > .btn:hover {
+  color: rgba(0,0,0,.7);
+}
+
+.FilterMenu > .btn svg {
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+
+.FilterMenu > .btn:hover svg,
+.FilterMenu.is-active > .btn svg {
+  opacity: 1;
+}
+
+/* Favorite toggle (star icon)
+   ========================================================================== */
+
+.Favorite {
+  color: var(--f-gray8);
+}
+
+.Favorite.active {
+  color: var(--f-color4);
+}
+
+/* Basic modular info block (on light gray background)
+   ========================================================================== */
+
+.DetailBlock {
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 3px 25px 0 rgba(0,0,0,.06);
+}
+
+.DetailBlock-heading {
+  border-width: 2px !important;
+}
+
+/* Heading separator for modular layouts (like advanced section in Site settings)
+   ========================================================================== */
+
+.BlockSeparatorHeading {
+  font-size: .7rem;
+  color: var(--f-gray8);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.BlockSeparatorHeading span {
+  background-color: var(--f-gray15);
+  padding: 0 1rem;
+  position: relative;
+}
+
+.BlockSeparatorHeading::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: var(--f-gray12);
+  box-shadow: 0 1px 0 0 rgba(255,255,255,.5);
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+/* Tabs - customized pill tabs
+   ========================================================================== */
+
+.Tabs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.Tabs .nav-item {
+  position: relative;
+  margin-right: -1px;
+}
+
+.Tabs .nav-item:before,
+.Tabs .nav-item:last-child:after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  top: 50%;
+  left: 0;
+  background: var(--f-gray13);
+  transform: translateY(-50%);
+}
+
+.Tabs .nav-item:last-child:after {
+  left: auto;
+  right: 0;
+}
+
+.Tabs .nav-link {
+  color: var(--f-gray8);
+}
+
+.Tabs .nav-link:hover {
+  color: rgba(0,0,0,.7);
+}
+
+.Tabs .nav-link.active {
+  color: var(--f-color1);
+  background: var(--f-color1-light);
+  position: relative;
+  z-index: 1;
+}
+
+/* Graphs
+   ========================================================================== */
+
+.Graph {
+
+}
+
+.Graph-timeframeTabs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.show-transfers .Graph-timeframeTabs .nav-link {
+  color: var(--f-color3);
+}
+
+.show-transfers .Graph-timeframeTabs .nav-link:hover {
+  color: var(--f-color3-dark);
+}
+
+.show-transfers .Graph-timeframeTabs .nav-link.active {
+  color: var(--f-color3);
+  background: var(--f-color3-light);
+}
+
+.show-bytes .Graph-timeframeTabs .nav-link {
+  color: var(--f-color2);
+}
+
+.show-bytes .Graph-timeframeTabs .nav-link:hover {
+  color: var(--f-color2-dark);
+}
+
+.show-bytes .Graph-timeframeTabs .nav-link.active {
+  color: var(--f-color2);
+  background: var(--f-color2-light);
+}
+
+.Graph-dataTabs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.Graph-dataTabs .nav-link {
+  color: var(--f-gray8);
+}
+
+.Graph-dataTabs .nav-link:hover {
+  color: rgba(0,0,0,.7);
+}
+
+.Graph-dataTabs .nav-item:first-child .nav-link.active {
+  color: var(--f-color3);
+  background: var(--f-color3-light);
+}
+
+.Graph-dataTabs .nav-item:last-child .nav-link.active {
+  color: var(--f-color2);
+  background: var(--f-color2-light);
+}
+
+/* Styling for recharts.org chart elements */
+.recharts-cartesian-axis-tick-value {
+  font-size: .7rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  fill: var(--f-gray8);
+}
+
+.recharts-cartesian-axis-tick line {
+  display: none;
+}
+
+.recharts-dot {
+  stroke-width: 20px;
+  r: 5;
+  stroke: hsla(262, 49%, 61%, .1);
+}
+
+.recharts-active-dot + path {
+  stroke: hsla(262, 49%, 61%, .5);
+  stroke-width: 2px;
+}
+
+.show-bytes .recharts-dot {
+  stroke-width: 20px;
+  r: 5;
+  stroke: hsla(153, 65%, 50%, .1);
+}
+
+.show-bytes .recharts-active-dot + path {
+  stroke: hsla(153, 65%, 50%, .5);
+  stroke-width: 2px;
+}
+
+.recharts-tooltip-wrapper > div {
+  border-color: var(--f-gray3) !important;
+  background: var(--f-gray3) !important;
+  border-radius: .25rem;
+  font-size: .7rem;
+  padding: 8px 12px !important;
+}
+
+.recharts-tooltip-wrapper > div p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.recharts-tooltip-wrapper > div li {
+  color: #fff !important;
+}
+
+.GraphContainer > div {
+  height: 100%;
+  min-height: 16rem;
+}
+
+/* Breadcrumb
+   ========================================================================== */
+
+.Breadcrumb {
+  color: var(--f-gray8);
+}
+
+.Breadcrumb li > a {
+  color: var(--f-gray8);
+}
+
+.Breadcrumb li:before {
+  color: var(--f-gray10) !important;
+}
+
+.Breadcrumb .breadcrumb-item.active,
+.Breadcrumb .breadcrumb-item.active .IconButton {
+  color: var(--f-gray6);
+}
+
+/* Lists for displaying data, large format
+   ========================================================================== */
+
+.DataList li {
+  border-color: var(--f-gray13);
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.DataList li .row > div:first-child {
+  color: var(--f-gray3);
+}
+
+.DataList li:first-child {
+  border-top: 0;
+}
+
+/* Fast styling for Bootstrap's built-in toasts
+   ========================================================================== */
+
+.toast {
+  font-size: var(--f-text-sm);
+  max-width: 100%;
+  width: 350px;
+}
+
+@media (max-width: 575px) {
+  .toast {
+    width: 280px;
+  }
+}
+
+.toast-header {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--f-gray3);
+  padding: .5rem .75rem;
+  align-items: start;
+}
+
+.toast-header > svg {
+  margin-top: .18rem;
+}
+
+.toast-header small {
+  margin-top: .2rem;
+  color: var(--f-gray8) !important;
+}
+
+.toast-header button.close {
+  padding: 0 .25rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: .1rem;
+  text-shadow: none;
+}
+
+/* ==========================================================================
+   Sign up & Log in
+   ========================================================================== */
+
+/* Sign up
+   ========================================================================== */
+
+/* Element to hold future background design */
+.SignUp::before {
+  content: '';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ddebfa url(../images/signup/waves.svg) center bottom repeat-x;
+}
+
+.SignUp .Brand svg {
+  fill: var(--f-gray3);
+}
+
+.SignUp-storage button {
+  background-color: var(--f-gray15);
+  background-position: 14px center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+.SignUp-storage button:hover {
+  background-color: var(--f-color1-light);
+  text-decoration: none;
+}
+
+.SignUp-storage .SignUp-dropbox {
+  background-image: url(../images/account/dropbox.svg);
+}
+
+.SignUp-storage .SignUp-googledrive {
+  background-image: url(../images/account/gdrive.svg);
+}
+
+.SignUp-storage .SignUp-box {
+  background-image: url(../images/account/box.svg);
+  background-size: 34px;
+  background-position: 14px 7px;
+}
+
+.SignUp-storage .SignUp-mediafire {
+  background-image: url(../images/account/mediafire.svg);
+  background-size: 36px;
+  background-position: 10px center;
+}
+
+.SignUp-storage .SignUp-onedrive {
+  background-image: url(../images/account/onedrive.svg);
+  background-size: 32px;
+}
+
+.SignUp-fast-dropbox {
+  background: url(../images/signup/fast-dropbox.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-dropbox-folder {
+  background: url(../images/signup/fast-dropbox-folder.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-googledrive {
+  background: url(../images/signup/fast-googledrive.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-googledrive-folder {
+  background: url(../images/signup/fast-googledrive-folder.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-box {
+  background: url(../images/signup/fast-box.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-box-folder {
+  background: url(../images/signup/fast-box-folder.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-mediafire {
+  background: url(../images/signup/fast-mediafire.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-mediafire-folder {
+  background: url(../images/signup/fast-mediafire-folder.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-onedrive {
+  background: url(../images/signup/fast-onedrive.png) center 0 / cover no-repeat;
+}
+
+.SignUp-fast-onedrive-folder {
+  background: url(../images/signup/fast-onedrive-folder.png) center 0 / cover no-repeat;
+}
+
+.SignUp-createAccount.was-validated .SignUp-newPassword:invalid ~ .SignUp-passwordStrength {
+  display: none;
+}
+
+/* Log in
+   ========================================================================== */
+
+.LogIn::before {
+  content: '';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ddebfa url(../images/signup/waves.svg) center bottom repeat-x;
+}
+
+.LogIn .Brand svg {
+  fill: var(--f-gray3);
+}
+
+.LogIn-mainForm.was-validated .LogIn-password:invalid ~ .Login-forgotPassword {
+  display: none;
+}
+
+/* ==========================================================================
+   Account settings
+   ========================================================================== */
+
+/* "Account" tab content
+   ========================================================================== */
+
+.Account-avatar {
+  width: 70px;
+  height: 70px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--f-gray8);
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.Account-details li {
+  border-color: var(--f-gray13);
+}
+
+.Account-details li h3 {
+  color: var(--f-gray8);
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+
+/* "Billing" tab content
+   ========================================================================== */
+
+.Billing-plan {
+  box-shadow: inset 0 0 0 2px var(--f-color3), 0 3px 25px 0 rgba(0,0,0,.06);
+}
+
+.Billing-planBadge {
+  background: linear-gradient(90deg, var(--f-color1), var(--f-color3));
+}
+
+.Billing-planBadge > div:first-child {
+  border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.Billing-planBadge svg {
+  fill: #fff;
+}
+
+.Billing-planBadge h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: .7rem;
+  opacity: .5;
+}
+
+.Billing-planBadge h2 + div {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(0,0,0,.5);
+}
+
+.Billing-details li {
+  border-color: var(--f-gray13);
+  background: transparent;
+}
+
+.Billing-details li h3 {
+  color: var(--f-gray8);
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+
+.Billing-domains td,
+.Billing-domains th {
+  white-space: nowrap;
+  /* width: 1%; */
+}
+
+.Billing-domains td:last-child,
+.Billing-domains th:last-child {
+  width: 1%;
+}
+
+.Billing-history td:first-child,
+.Billing-history th:first-child {
+  min-width: 18rem;
+}
+
+.Billing-history td:not(:first-child),
+.Billing-history th:not(:first-child) {
+  white-space: nowrap;
+  /* width: 1%; */
+}
+
+.Billing-history td:last-child,
+.Billing-history th:last-child {
+  width: 1%;
+}
+
+/* "API Access" tab content
+   ========================================================================== */
+
+.API-keyList td:nth-child(2),
+.API-keyList th:nth-child(2) {
+  min-width: 18rem;
+}
+
+.API-keyList td:not(:nth-child(2)),
+.API-keyList th:not(:nth-child(2)) {
+  white-space: nowrap;
+  /* width: 1%; */
+}
+
+.API-keyList td:last-child,
+.API-keyList th:last-child {
+  width: 1%;
+}
+
+/* "Storage Providers" tab content
+   ========================================================================== */
+
+.Storage-box,
+.Storage-dropbox,
+.Storage-googledrive,
+.Storage-mediafire,
+.Storage-onedrive {
+  height: 64px;
+  width: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Storage-box {
+  background-image: url(../images/account/box.svg);
+  background-size: 55%;
+}
+
+.Storage-dropbox {
+  background-image: url(../images/account/dropbox.svg);
+  background-size: 50%;
+}
+
+.Storage-googledrive {
+  background-image: url(../images/account/gdrive.svg);
+  background-size: 50%;
+}
+
+.Storage-mediafire {
+  background-image: url(../images/account/mediafire.svg);
+  background-size: 65%;
+}
+
+.Storage-onedrive {
+  background-image: url(../images/account/onedrive.svg);
+  background-size: 55%;
+}
+
+/* Storage connection details page
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .StorageInfo h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* "Events" tab content
+   ========================================================================== */
+
+.Events-eventList td:last-child,
+.Events-eventList th:last-child {
+  min-width: 18rem;
+  max-width: 25rem;
+}
+
+.Events-eventList td:not(:last-child),
+.Events-eventList th:not(:last-child) {
+  white-space: nowrap;
+}
+
+.Events-eventList tbody tr {
+  background-color: var(--f-gray16);
+}
+
+.Events-eventList tbody tr.is-new {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Site
+   ========================================================================== */
+
+.Site {
+  border-color: var(--f-gray13);
+}
+
+.Site-status {
+  height: 8px;
+  width: 8px;
+  background: var(--f-color6);
+}
+
+.Site-status.is-active {
+  background: var(--f-color2);
+}
+
+.Site-preview {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--f-gray15) url(../images/site/site_hollowman.svg) center top / cover no-repeat;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.07);
+}
+
+@media ( min-width: 768px ) {
+  .Site-preview {
+    width: 90px;
+  }
+}
+
+.Site-details {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.Site-details > a {
+  color: var(--f-gray8);
+}
+
+.Site-graphMini {
+  width: 120px;
+  height: 30px;
+  background: var(--f-gray16);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+  overflow: hidden;
+}
+
+.GraphRules i {
+  height: 1px;
+  width: 1px;
+  background: black;
+  opacity: .07;
+}
+
+.Site-graphMini svg .recharts-layer path {
+  stroke: var(--f-color3);
+}
+
+.Site-owner {
+  width: 30px;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  color: var(--f-gray8);
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.Site-storage {
+  color: var(--f-gray10);
+}
+
+.Site-preview .Favorite {
+  background: var(--f-gray3);
+  border-radius: .25rem 0 .25rem 0;
+  font-size: 75%;
+  padding: .15rem .3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+
+.Site-preview:hover .Favorite {
+  opacity: 1;
+}
+
+.Site-preview .Favorite.active {
+  opacity: 1;
+}
+
+.Site-preview .Favorite:not(.active):hover {
+  color: var(--f-gray8);
+}
+
+/* "Add new site" row
+   ========================================================================== */
+
+.Site-addNew {
+  font-size: var(--f-text-sm);
+  background-color: var(--f-gray16);
+  border-color: var(--f-gray12) !important;
+  border-style: dashed !important;
+  color: var(--f-gray8);
+  padding: 2rem;
+}
+
+/* ==========================================================================
+   Create new site
+   ========================================================================== */
+
+.ChooseConfig label {
+  transition: background-color .07s ease-in-out,box-shadow .07s ease-in-out;
+}
+
+.ChooseConfig input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px var(--f-color1);
+  background: #fff !important;
+}
+
+.ChooseConfig-website,
+.ChooseConfig-ftp,
+.ChooseConfig-download {
+  height: 48px;
+  width: 48px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ChooseConfig-website {
+  background-image: url(../images/create_site/globe.svg);
+}
+
+.ChooseConfig-ftp {
+  background-image: url(../images/create_site/ftp.svg);
+}
+
+.ChooseConfig-download {
+  background-image: url(../images/create_site/download.svg);
+}
+
+.ChooseStorage > div:last-child {
+  margin-bottom: 0 !important;
+}
+
+.ChooseStorage label {
+  transition: background-color .07s ease-in-out,box-shadow .07s ease-in-out;
+}
+
+.ChooseStorage input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px var(--f-color1);
+  background: #fff !important;
+}
+
+.ChooseStorage-box,
+.ChooseStorage-dropbox,
+.ChooseStorage-googledrive,
+.ChooseStorage-mediafire,
+.ChooseStorage-onedrive {
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+}
+
+.ChooseStorage-box {
+  background-image: url(../images/account/box.svg);
+  background-size: 38px;
+}
+
+.ChooseURL.was-validated .ChooseURL-urlInput:invalid ~ .ChooseURL-helpText {
+  display: none;
+}
+
+.ChooseStorage-dropbox {
+  background-image: url(../images/account/dropbox.svg);
+  background-size: 32px;
+}
+
+.ChooseStorage-googledrive {
+  background-image: url(../images/account/gdrive.svg);
+  background-size: 32px;
+}
+
+.ChooseStorage-mediafire {
+  background-image: url(../images/account/mediafire.svg);
+  background-size: 44px;
+  background-position: 0 center;
+}
+
+.ChooseStorage-onedrive {
+  background-image: url(../images/account/onedrive.svg);
+  background-size: 38px;
+}
+
+.ChooseURL.was-validated .ChooseURL-urlInput:invalid ~ .ChooseURL-helpText {
+  display: none;
+}
+
+.SiteCreatedGraphic-box,
+.SiteCreatedGraphic-dropbox,
+.SiteCreatedGraphic-googledrive,
+.SiteCreatedGraphic-mediafire,
+.SiteCreatedGraphic-onedrive,
+.SiteCreatedGraphic-website {
+  width: 160px;
+  padding-top: 84px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.SiteCreatedGraphic-box {
+  background-image: url(../images/create_site/box.svg);
+}
+
+.SiteCreatedGraphic-dropbox {
+  background-image: url(../images/create_site/dropbox.svg);
+}
+
+.SiteCreatedGraphic-googledrive {
+  background-image: url(../images/create_site/googledrive.svg);
+}
+
+.SiteCreatedGraphic-mediafire {
+  background-image: url(../images/create_site/mediafire.svg);
+}
+
+.SiteCreatedGraphic-onedrive {
+  background-image: url(../images/create_site/onedrive.svg);
+}
+
+.SiteCreatedGraphic-website {
+  background-image: url(../images/create_site/website.svg);
+}
+
+.SiteCreatedGraphic-arrow {
+  height: 80px;
+  width: 80px;
+  background: url(../images/create_site/arrow.svg) center no-repeat;
+}
+
+@media ( max-width: 575px ) {
+  .CreateSite h1 {
+    font-size: 1.25rem;
+  }
+
+  .ChooseConfig-website,
+  .ChooseConfig-ftp,
+  .ChooseConfig-download {
+    height: 32px;
+    width: 32px;
+  }
+
+  .CreateSite .input-group-prepend span,
+  .CreateSite .input-group-append span {
+    background: none !important;
+    border: 0;
+  }
+
+  .SiteCreatedGraphic-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ==========================================================================
+   Site details view
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .Site-heading h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Overview
+   ========================================================================== */
+
+.Overview-graphRow {
+  max-width: 105rem;
+}
+
+.Overview-basicInfo {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.Overview-basicInfo .row > span:last-child {
+  color: var(--f-gray3);
+}
+
+.Overview-settings {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.Overview-settings .is-enabled {
+  color: var(--f-color2);
+}
+
+/* Browse
+   ========================================================================== */
+
+.file-type-warning {
+  background-color: #fffae4;
+  color: #dcc979 !important;
+  border-color: #f7e8a5 !important;
+}
+
+.DataList li.file-type-warning .row > div:first-child {
+  color: #dcc979;
+}
+
+.DataList li.file-type-warning .row a.btn {
+  padding: 0 .75rem;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.DataList li.file-type-warning .row a.IconButton {
+  color: #dcc979;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.file-filter-too-large {
+  background-color: #fff1f1;
+  color: #dcb8b8 !important;
+  border-color: #ffdfdf !important;
+}
+
+.DataList li.file-filter-too-large .row > div:first-child {
+  color: #dcb8b8;
+}
+
+.file-filter-excluded {
+  background-color: #f1f0f0;
+  color: #c1c1c1 !important;
+  border-color: #eaeaea !important;
+}
+
+.DataList li.file-filter-excluded .row > div:first-child {
+  color: #c1c1c1;
+}
+
+
+
+/* Analytics
+   ========================================================================== */
+
+.Profile-preview {
+  position: relative;
+  width: 90px;
+  height: 60px;
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.Profile-details {
+  color: var(--f-gray8);
+}
+
+.GAgraphic {
+  height: 120px;
+  width: 120px;
+  background: url(../images/analytics/ga_lg_circle.svg) center / contain no-repeat;
+}
+
+/* Domain
+   ========================================================================== */
+
+.DomainGraphic {
+  height: 110px;
+  width: 120px;
+  background: url(../images/create_site/website.svg) center no-repeat;
+}
+
+.Domain-rowItem {
+  margin-bottom: -1px;
+}
+
+.Domain-rowItem > div {
+  border-left: 6px solid var(--f-color2);
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.Domain-rowItem.is-checking > div {
+  border-color: var(--f-color4);
+}
+
+.Domain-rowItem.is-incorrect > div {
+  border-color: var(--f-color6);
+}
+
+.Domain-rowItem h3 {
+  color: var(--f-color2);
+}
+
+.Domain-rowItem.is-checking h3 {
+  color: var(--f-color4);
+}
+
+.Domain-rowItem.is-incorrect h3 {
+  color: var(--f-color6);
+}
+
+.Domain-rowItem + .btn {
+  border-color: var(--f-gray12);
+  background: var(--f-gray13);
+}
+
+.Domain-rowItem + .btn:hover,
+.Domain-rowItem + .btn:focus,
+.Domain-rowItem + .btn:active {
+  color: var(--f-gray3) !important;
+  border-color: var(--f-gray10) !important;
+  background: var(--f-gray11) !important;
+}
+
+/* Usage
+   ========================================================================== */
+
+.Usage-graphRow {
+  max-width: 105rem;
+}
+
+.Usage-totals h3 {
+  font-size: .7rem;
+  text-transform: uppercase;
+  color: var(--f-gray8);
+}
+
+.Usage-totals span {
+  color: var(--f-gray3);
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media ( min-width: 576px ) {
+  .Usage-totals span {
+    font-size: 125%;
+    font-weight: 300;
+  }
+}
+
+.TotalsGraphic-transfers,
+.TotalsGraphic-bytes,
+.TotalsGraphic-costs {
+  height: 70px;
+  width: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.TotalsGraphic-transfers {
+  background-image: url(../images/usage/transfers.svg);
+}
+
+.TotalsGraphic-bytes {
+  background-image: url(../images/usage/bytes.svg);
+}
+
+.TotalsGraphic-costs {
+  background-image: url(../images/usage/costs.svg);
+}
+
+/* ==========================================================================
+   Edit site
+   ========================================================================== */
+
+.EditSite-settingsRow {
+  max-width: 90rem;
+}
+
+.EditSite-password_searchRow {
+  max-width: 90rem;
+}
+
+.EditSite-performance {
+  max-width: 90rem;
+}
+
+.EditSite-exclusions {
+  max-width: 90rem;
+}
+
+.EditSite-syncing {
+  max-width: 90rem;
+}
+
+.EditSite-dangerZone {
+  max-width: 90rem;
+}
+
+.EditSite .custom-switch .custom-control-label::before {
+  top: .075rem;
+}
+
+.EditSite .custom-switch .custom-control-label::after {
+  top: calc(.075rem + 2px);
+}
+
+.EditSite .custom-switch .custom-control-input:checked~.custom-control-label {
+  color: var(--f-color2);
+}
+
+/* ==========================================================================
+   Site password - page shown to visitors when site is password protected
+   ========================================================================== */
+
+.SitePassword .Brand svg {
+  fill: var(--f-gray3);
+}
+
+/* ==========================================================================
+   Analytics profile - common items
+   ========================================================================== */
+
+.Profile-owner {
+  width: 30px;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  color: var(--f-gray8);
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+/* ==========================================================================
+   Create new analytics profile
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .CreateProfile h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Choose analytics profile
+   ========================================================================== */
+
+.ChooseProfile label {
+  transition: background-color .07s ease-in-out, box-shadow .07s ease-in-out;
+}
+
+.ChooseProfile input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px var(--f-color1);
+  background: #fff !important;
+}
+
+@media ( max-width: 575px ) {
+  .ChooseProfile h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Edit analytics profile
+   ========================================================================== */
+
+.Profile-preview {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--f-gray15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+@media ( min-width: 768px ) {
+  .Profile-preview {
+    width: 90px;
+  }
+}
+
+.Profile-details {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.Profile-settingsRow {
+  max-width: 90rem;
+}
+
+.Profile-settings,
+.Profile-customization {
+  font-size: var(--f-text-sm);
+  color: var(--f-gray8);
+}
+
+.Profile-settings .row > span:last-child,
+.Profile-customization .row > span:last-child {
+  color: var(--f-gray3);
+}
+
+.Profile-customization .row > span.is-enabled {
+  color: var(--f-color2);
+}
+
+.Profile-customization .custom-switch .custom-control-label::before {
+  top: .075rem;
+}
+
+.Profile-customization .custom-switch .custom-control-label::after {
+  top: calc(.075rem + 2px);
+}
+
+.Profile-customization .custom-switch .custom-control-input:checked~.custom-control-label {
+  color: var(--f-color2);
+}
+
+.Profile-fileFilter,
+.Profile-countryFilter {
+  max-width: 90rem;
+}
+
+@media ( max-width: 575px ) {
+  .Profile-heading h1 {
+    font-size: 1.25rem;
+  }
+
+  .Profile-deleted h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Domain
+   ========================================================================== */
+
+/* Add custom domain
+   ========================================================================== */
+
+
+@media (max-width: 575px) {
+  .AddDomain h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.AddDomain-paymentForm {
+  border-top: 6px solid var(--f-gray3);
+}
+
+.Card-visa,
+.Card-amex,
+.Card-discover,
+.Card-mastercard {
+  height: 19px;
+  width: 30px;
+  background-image: url(../images/add_domain/credit_card_sprite_color.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  border-radius: .15rem;
+}
+
+.Card-visa {
+  background-position: 0 0;
+}
+
+.Card-amex {
+  background-position: 0 -60px;
+}
+
+.Card-discover {
+  background-position: 0 -90px;
+}
+
+.Card-mastercard {
+  background-position: 0 -30px;
+}
+
+/* Choose existing domain
+   ========================================================================== */
+
+@media (max-width: 575px) {
+  .ChooseDomain h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* DNS configuration
+   ========================================================================== */
+
+@media (max-width: 575px) {
+  .DNSconfiguration h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Domain details (linked from account > domains tab)
+   ========================================================================== */
+
+.Site-delete {
+  color: var(--f-color6);
+}
+
+.Site-delete:hover {
+  color: var(--f-color6-dark);
+}
+
+/* "Attach a site" row
+   ========================================================================== */
+
+.Site-attach {
+  font-size: var(--f-text-sm);
+  background-color: var(--f-gray16);
+  border-color: var(--f-gray12) !important;
+  border-style: dashed !important;
+  padding: 2rem;
+}
+
+/* Add site to new subdomain (linked from account > domains tab > domain Overview tab)
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .AddSiteToSubdomain h1 {
+    font-size: 1.25rem;
+  }
+
+  .AddSiteToSubdomain .input-group-prepend span,
+  .AddSiteToSubdomain .input-group-append span {
+    background: none !important;
+    border: 0;
+  }
+}
+
+.AddSubdomain.was-validated .AddSubdomain-subdomainInput:invalid ~ .AddSubdomain-helpText {
+  display: none;
+}
+
+.AddSiteToSubdomain-site label {
+  transition: background-color .07s ease-in-out,box-shadow .07s ease-in-out;
+}
+
+.AddSiteToSubdomain-site input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px var(--f-color1);
+  background: #fff !important;
+}
+
+/* Create DNS record (linked from account > domains tab > domain DNS tab)
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .CreateDnsRecord h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.AddDnsRecord.was-validated .AddDnsRecord-input:invalid ~ .AddDnsRecord-helpText {
+  display: none;
+}
+
+
+/* ==========================================================================
+   Notification & error pages
+   ========================================================================== */
+
+/* Destination not found
+   ========================================================================== */
+
+@media ( max-width: 575px ) {
+  .NotFound h1 {
+    font-size: 1.25rem;
+  }
+}

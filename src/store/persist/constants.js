@@ -1,0 +1,1 @@
+export const EXPIRE_PERSISTED_DATA = 'persist/EXPIRE_PERSISTED_DATA'

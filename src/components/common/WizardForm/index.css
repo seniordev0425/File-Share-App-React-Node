@@ -1,0 +1,30 @@
+.wizardStep:not([class*="wizardStep-"]) {
+  display: none;
+}
+
+.wizardStep-enter {
+  opacity: 0;
+}
+
+.wizardStep-enter-active {
+  opacity: 1;
+  transition: opacity 200ms linear;
+}
+
+.wizardStep-enter-done {
+  opacity: 1;
+}
+
+.wizardStep-exit {
+  opacity: 1;
+}
+
+.wizardStep-exit-active {
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.wizardStep-exit-done {
+  opacity: 0;
+  display: none;
+}

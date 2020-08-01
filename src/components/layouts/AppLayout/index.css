@@ -1,0 +1,22 @@
+.appLayout {
+  position: relative;
+}
+
+.appLayout__content-wrapper {
+  z-index: 1;
+}
+
+.appLayout__footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  z-index: 100;
+}
+
+.appLayout__version-link {
+  padding: 5px;
+  color: inherit !important;
+  text-decoration: none !important;
+}

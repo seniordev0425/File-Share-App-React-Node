@@ -1,0 +1,7 @@
+.react-images__blanket {
+  z-index: 99999 !important;
+}
+
+.react-images__positioner {
+  z-index: 100000 !important;
+}

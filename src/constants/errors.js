@@ -1,0 +1,3 @@
+export const ERROR_MAP = {
+  CREDENTIALS_NOT_SUPPLIED: 10011,
+}

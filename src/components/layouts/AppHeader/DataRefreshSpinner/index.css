@@ -1,0 +1,82 @@
+.circleLoader {
+  --brand-success: #5cb85c;
+  --loader-size: 44px;
+  --check-thickness: 2px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: var(--brand-success);
+  animation: circle-loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: var(--loader-size);
+  height: var(--loader-size);
+}
+
+.circleLoader.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: var(--brand-success);
+  transition: border 500ms ease-out;
+}
+
+.circleLoader .checkmark {
+  display: none;
+}
+
+.circleLoader.load-complete .checkmark {
+  display: block;
+}
+
+.circleLoader .checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: circle-loader-checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+
+.circleLoader .checkmark:after {
+  opacity: 1;
+  height: calc(var(--loader-size) / 2);
+  width: calc(var(--loader-size) / 4);
+  transform-origin: left top;
+  border-right: var(--check-thickness) solid var(--brand-success);
+  border-top: var(--check-thickness) solid var(--brand-success);
+  content: '';
+  left: calc(var(--loader-size) / 7 + var(--loader-size) / 12);
+  top: calc(var(--loader-size) / 2);
+  position: absolute;
+}
+
+@keyframes circle-loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-loader-checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: calc(var(--loader-size) / 4);
+    opacity: 1;
+  }
+  40% {
+    height: calc(var(--loader-size) / 2);
+    width: calc(var(--loader-size) / 4);
+    opacity: 1;
+  }
+  100% {
+    height: calc(var(--loader-size) / 2);
+    width: calc(var(--loader-size) / 4);
+    opacity: 1;
+  }
+}

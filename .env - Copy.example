@@ -1,0 +1,16 @@
+# Put this line as is into `.env` to get the version defined in package.json
+REACT_APP_VERSION=$npm_package_version
+
+REACT_APP_API_BASE_URL=https://go.fast.io/api
+REACT_APP_API_VERSION=v1.x
+REACT_APP_STRIPE_JS_URL=https://js.stripe.com/v3/
+
+REACT_APP_SEGMENT_WRITE_KEY=
+
+REACT_APP_BUGSNAG_KEY=
+
+# Top nav bar notification acknowledge timeout in ms
+REACT_APP_NOTIFICATION_ACKNOWLEDGE_TIMEOUT=2000
+
+# Set 1 for development only
+REACT_APP_DEBUG=0

@@ -1,0 +1,10 @@
+.slide-down {
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform: translate3d(0, 101%, 0);
+  opacity: 0;
+}
+
+.slide-down.in {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
