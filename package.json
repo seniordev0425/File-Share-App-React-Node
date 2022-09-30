@@ -41,7 +41,7 @@
     "react-transition-group": "^2.9.0",
     "react-visibility-sensor": "^5.0.2",
     "reactstrap": "^8.0.0",
-    "recharts": "^1.5.0",
+    "recharts": "^2.1.14",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.4",
     "redux-auth-wrapper": "^2.1.0",
